@@ -1,0 +1,60 @@
+<% include ('../layouts/header.ejs') %>
+<head>
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://st1.zoom.us/zoom.ico" alt="Zoom Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link sign-in">Sign In</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="signup-section">
+            <div class="signup-container">
+                <h1>Sign Up Free</h1>
+                <p class="subtitle">Already have an account? <a href="#">Sign In</a></p>
+                
+                <form id="signupForm" class="signup-form">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div id="recaptcha"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="signup-button">Sign Up</button>
+                    </div>
+
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="social-signup">
+                        <button type="button" class="google-btn">
+                            <img src="https://www.google.com/favicon.ico" alt="Google">
+                            Continue with Google
+                        </button>
+                    </div>
+                </form>
+
+                <div class="terms">
+                    By signing up, I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/home.js"></script>
+</body>
+
+
+<% include ('../layouts/footer.ejs') %>
